@@ -12,7 +12,19 @@ body:
       placeholder: "Describe the issue..."
     validations:
       required: true
-      
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: How can we duplicate it? (if known)
+      description: "How do you trigger this bug? Please walk us through it step by step."
+      value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
+
   - type: textarea
     id: problem-description-additional
     attributes:
