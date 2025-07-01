@@ -4,11 +4,44 @@ title: "bug: "
 labels: ["needs review"]
 
 body:
+
+  - type: input
+    id: koboldcpp-version
+    attributes:
+      label: KoboldCpp Version
+      description: The version of KoboldCpp you are using.
+      placeholder: e.g., v1.2.3
+    validations:
+      required: true
+      
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating System(s)
+      description: The operating system(s) you are using when you experience the problem.
+      placeholder: e.g., Windows 10, macOS Big Sur, Ubuntu 20.04, Android
+    validations:
+      required: true
+      
+  - type: input
+    id: cpu
+    attributes:
+      label: CPU
+      description: The CPU model you are using.
+      placeholder: e.g., Intel i7-9700K, AMD Ryzen 7 3700X
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+      description: The GPU model you are using.
+      placeholder: e.g., NVIDIA GeForce RTX 2080, AMD Radeon RX 5700 XT
+      
   - type: textarea
     id: problem-description
     attributes:
       label: Describe the Issue
-      description: A clear and detailed description of what the issue is, and how to duplicate it (if applicable).
+      description: A clear and detailed description of what the issue is.
       placeholder: "Describe the issue..."
     validations:
       required: true
@@ -16,8 +49,8 @@ body:
   - type: textarea
     id: repro
     attributes:
-      label: How can we duplicate it? (if known)
-      description: "How do you trigger this bug? Please walk us through it step by step."
+      label: How can we duplicate it?
+      description: "If known, how do you trigger this bug? Please walk us through it step by step."
       placeholder: |
         1. Go to '...'
         2. Click on '....'
@@ -25,10 +58,18 @@ body:
         4. See error
 
   - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: Describe the expected behavior.
+      
+  - type: textarea
     id: problem-description-additional
     attributes:
       label: Additional Information
       description: |
-        Please provide as much relevant information about your setup as possible, such as the Operating System, CPU, GPU, KoboldCpp Version, and relevant logs.
+        Please provide any other relevant information about your setup.
         It would be helpful to include the launch params from the terminal output, flags and crash logs.
-      placeholder: "Describe the issue..."
+      placeholder: |
+        launch parameters, snippet of the error, crash logs, etc.
