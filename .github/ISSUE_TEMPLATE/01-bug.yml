@@ -1,11 +1,9 @@
----
 name: Create New Issue
-about: Please describe the issue in detail
-title: 'bug: '
-labels: 'needs-triage'
-assignees: ''
+description: Please describe the issue in detail
+title: "bug: "
+labels: ["needs-triage"]
+assignees:
 
----
 body:
   - type: textarea
     id: problem-description
