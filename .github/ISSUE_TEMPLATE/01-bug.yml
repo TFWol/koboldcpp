@@ -1,0 +1,26 @@
+---
+name: Create New Issue
+about: Please describe the issue in detail
+title: 'bug: '
+labels: 'needs-triage'
+assignees: ''
+
+---
+body:
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: Describe the Issue
+      description: A clear and detailed description of what the issue is, and how to duplicate it (if applicable).
+      placeholder: "Describe the issue..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: problem-description-additional
+    attributes:
+      label: Additional Information
+      description: |
+        Please provide as much relevant information about your setup as possible, such as the Operating System, CPU, GPU, KoboldCpp Version, and relevant logs.
+        It would be helpful to include the launch params from the terminal output, flags and crash logs.
+      placeholder: "Describe the issue..."
