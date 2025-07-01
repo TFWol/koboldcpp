@@ -9,8 +9,9 @@ body:
     id: koboldcpp-version
     attributes:
       label: KoboldCpp Version
-      description: The version of KoboldCpp you are using.
+      description: What version of KoboldCpp are you using?
       placeholder: e.g., v1.2.3
+      value: v
     validations:
       required: true
       
@@ -27,14 +28,14 @@ body:
     id: cpu
     attributes:
       label: CPU
-      description: The CPU model you are using.
+      description: CPU model?
       placeholder: e.g., Intel i7-9700K, AMD Ryzen 7 3700X
 
   - type: input
     id: gpu
     attributes:
       label: GPU
-      description: The GPU model you are using.
+      description: GPU? (if any)
       placeholder: e.g., NVIDIA GeForce RTX 2080, AMD Radeon RX 5700 XT
       
   - type: textarea
