@@ -2,7 +2,6 @@ name: Create New Issue
 description: Please describe the issue in detail
 title: "bug: "
 labels: ["needs-triage"]
-assignees:
 
 body:
   - type: textarea
